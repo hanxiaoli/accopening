@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>本人確認書類撮影</title>
+</head>
+<body>
+	<form method="POST" enctype="multipart/form-data"
+		action="/verificationUpload">
+		<input type="file" name="file" accept="image/*" capture="camera" />
+		<button>送信</button>
+	</form>
+</body>
+</html>
