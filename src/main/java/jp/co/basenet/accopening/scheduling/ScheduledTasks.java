@@ -5,6 +5,11 @@ import java.util.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +19,12 @@ public class ScheduledTasks {
 	private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+	
+	@Autowired
+	JobLauncher jobLauncher;
+
+	@Autowired
+	Job coordinateOpeningInfo;
 
 	/**
 	 * 
@@ -25,12 +36,22 @@ public class ScheduledTasks {
 	 * second, minute, hour, day of month, month, day(s) of week
 	 * 
 	 */
-	@Scheduled(cron = "0 0 18 * * MON-FRI")
-	// @Scheduled(cron = "*/5 * * * * *")
+	//@Scheduled(cron = "0 0 18 * * MON-FRI")
+	@Scheduled(cron = "*/5 * * * * *")
 	public void reportCurrentTime() {
 		logger.info("The time is now {}", dateFormat.format(new Date()));
 		logger.error("The time is now {}", dateFormat.format(new Date()));
 		System.out.println("The time is now {}" + dateFormat.format(new Date()));
+		
+		Logger logger = LoggerFactory.getLogger(this.getClass());
+		try {
+			JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis())
+					.toJobParameters();
+			jobLauncher.run(coordinateOpeningInfo, jobParameters);
+
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+		}
 	}
 
 }

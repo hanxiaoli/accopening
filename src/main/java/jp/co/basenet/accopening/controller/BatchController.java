@@ -17,20 +17,21 @@ public class BatchController {
 	JobLauncher jobLauncher;
 
 	@Autowired
-	Job job;
+	Job coordinateOpeningInfo;
 
 	@GetMapping("/coordinate-opening-info")
-	public int handle() throws Exception {
+	public String handle() throws Exception {
 
 		Logger logger = LoggerFactory.getLogger(this.getClass());
 		try {
 			JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis())
 					.toJobParameters();
-			jobLauncher.run(job, jobParameters);
+			jobLauncher.run(coordinateOpeningInfo, jobParameters);
+
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 		}
 
-		return 0;
+		return "batch-result";
 	}
 }
