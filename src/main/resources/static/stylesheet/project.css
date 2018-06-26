@@ -1,8 +1,12 @@
 header {
-	height : 4em;
+	height : 65px;
 	padding-top:10%
 }
 
 .basenet-title {
 	font-size:150%;
+}
+
+aside {
+	color:grey;
 }
