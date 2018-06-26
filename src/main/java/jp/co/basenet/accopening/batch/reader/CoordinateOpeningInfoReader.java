@@ -2,12 +2,9 @@ package jp.co.basenet.accopening.batch.reader;
 
 import java.util.Iterator;
 
-import javax.persistence.EntityManagerFactory;
-
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.support.AbstractItemStreamItemReader;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 import jp.co.basenet.accopening.entity.Mynumber;
 import jp.co.basenet.accopening.repository.MynumberRepository;
