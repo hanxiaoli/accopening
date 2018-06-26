@@ -1,0 +1,90 @@
+.basenet-theme-l5 {
+	color: #000 !important;
+	background-color: #f1f9ff !important
+}
+
+.basenet-theme-l4 {
+	color: #000 !important;
+	background-color: #d0ebfe !important
+}
+
+.basenet-theme-l3 {
+	color: #000 !important;
+	background-color: #a1d7fd !important
+}
+
+.basenet-theme-l2 {
+	color: #000 !important;
+	background-color: #72c3fc !important
+}
+
+.basenet-theme-l1 {
+	color: #fff !important;
+	background-color: #43aefb !important
+}
+
+.basenet-theme-d1 {
+	color: #fff !important;
+	background-color: #058dee !important
+}
+
+.basenet-theme-d2 {
+	color: #fff !important;
+	background-color: #047dd4 !important
+}
+
+.basenet-theme-d3 {
+	color: #fff !important;
+	background-color: #046eb9 !important
+}
+
+.basenet-theme-d4 {
+	color: #fff !important;
+	background-color: #035e9f !important
+}
+
+.basenet-theme-d5 {
+	color: #fff !important;
+	background-color: #034e84 !important
+}
+
+.basenet-theme-light {
+	color: #000 !important;
+	background-color: #f1f9ff !important
+}
+
+.basenet-theme-dark {
+	color: #fff !important;
+	background-color: #034e84 !important
+}
+
+.basenet-theme-action {
+	color: #fff !important;
+	background-color: #034e84 !important
+}
+
+.basenet-theme {
+	color: #fff !important;
+	background-color: #139afa !important
+}
+
+.basenet-text-theme {
+	color: #139afa !important
+}
+
+.basenet-border-theme {
+	border-color: #139afa !important
+}
+
+.basenet-hover-theme:hover {
+	color: #fff !important;
+	background-color: #139afa !important
+}
+
+.basenet-hover-text-theme:hover {
+	color: #139afa !important
+}
+
+.basenet-hover-border-theme:hover {
+	border-color: #139afa !important
+}

@@ -1,0 +1,1326 @@
+/* core.css foundation from W3PRO.CSS 4.10 Jun 26th 2018 by Han Xiaoli */
+html {
+	box-sizing: border-box
+}
+
+*, *:before, *:after {
+	box-sizing: inherit
+}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu,
+	nav, section, summary {
+	display: block
+}
+
+audio, canvas, progress, video {
+	display: inline-block
+}
+
+progress {
+	vertical-align: baseline
+}
+
+audio:not ([controls] ){
+	display: none;
+	height: 0
+}
+
+[hidden], template {
+	display: none
+}
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
+}
+
+a:active, a:hover {
+	outline-width: 0
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted
+}
+
+dfn {
+	font-style: italic
+}
+
+mark {
+	background: #ff0;
+	color: #000
+}
+
+small {
+	font-size: 80%
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sub {
+	bottom: -0.25em
+}
+
+sup {
+	top: -0.5em
+}
+
+figure {
+	margin: 1em 40px
+}
+
+img {
+	border-style: none
+}
+
+svg:not (:root ){
+	overflow: hidden
+}
+
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible
+}
+
+button, input, select, textarea {
+	font: inherit;
+	margin: 0
+}
+
+optgroup {
+	font-weight: bold
+}
+
+button, input {
+	overflow: visible
+}
+
+button, select {
+	text-transform: none
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+	-webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner,
+	[type=submit]::-moz-focus-inner {
+	border-style: none;
+	padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring,
+	[type=submit]:-moz-focusring {
+	outline: 1px dotted ButtonText
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+
+legend {
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal
+}
+
+textarea {
+	overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+	padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button
+	{
+	height: auto
+}
+
+[type=search] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration
+	{
+	-webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit
+}
+/* End extract */
+html, body {
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5
+}
+
+html {
+	overflow-x: hidden
+}
+
+h1 {
+	font-size: 36px
+}
+
+h2 {
+	font-size: 30px
+}
+
+h3 {
+	font-size: 24px
+}
+
+h4 {
+	font-size: 20px
+}
+
+h5 {
+	font-size: 18px
+}
+
+h6 {
+	font-size: 16px
+}
+
+.basenet-serif {
+	font-family: serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0
+}
+
+.basenet-wide {
+	letter-spacing: 4px
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eee;
+	margin: 20px 0
+}
+
+.basenet-image {
+	max-width: 100%;
+	height: auto
+}
+
+img {
+	vertical-align: middle
+}
+
+a {
+	color: inherit
+}
+
+.basenet-table, .basenet-table-all {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: table
+}
+
+.basenet-table-all {
+	border: 1px solid #ccc
+}
+
+.basenet-bordered tr, .basenet-table-all tr {
+	border-bottom: 1px solid #ddd
+}
+
+.basenet-striped tbody tr:nth-child(even) {
+	background-color: #f1f1f1
+}
+
+.basenet-table-all tr:nth-child(odd) {
+	background-color: #fff
+}
+
+.basenet-table-all tr:nth-child(even) {
+	background-color: #f1f1f1
+}
+
+.basenet-hoverable tbody tr:hover, .basenet-ul.basenet-hoverable li:hover {
+	background-color: #ccc
+}
+
+.basenet-centered tr th, .basenet-centered tr td {
+	text-align: center
+}
+
+.basenet-table td, .basenet-table th, .basenet-table-all td, .basenet-table-all th {
+	padding: 8px 8px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: top
+}
+
+.basenet-table th:first-child, .basenet-table td:first-child, .basenet-table-all th:first-child,
+	.basenet-table-all td:first-child {
+	padding-left: 16px
+}
+
+.basenet-btn, .basenet-button {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap
+}
+
+.basenet-btn:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19)
+}
+
+.basenet-btn, .basenet-button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.basenet-disabled, .basenet-btn:disabled, .basenet-button:disabled {
+	cursor: not-allowed;
+	opacity: 0.3
+}
+
+.basenet-disabled *, :disabled * {
+	pointer-events: none
+}
+
+.basenet-btn.basenet-disabled:hover, .basenet-btn:disabled:hover {
+	box-shadow: none
+}
+
+.basenet-badge, .basenet-tag {
+	background-color: #000;
+	color: #fff;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center
+}
+
+.basenet-badge {
+	border-radius: 50%
+}
+
+.basenet-ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+
+.basenet-ul li {
+	padding: 8px 16px;
+	border-bottom: 1px solid #ddd
+}
+
+.basenet-ul li:last-child {
+	border-bottom: none
+}
+
+.basenet-tooltip, .basenet-display-container {
+	position: relative
+}
+
+.basenet-tooltip .basenet-text {
+	display: none
+}
+
+.basenet-tooltip:hover .basenet-text {
+	display: inline-block
+}
+
+.basenet-ripple:active {
+	opacity: 0.5
+}
+
+.basenet-ripple {
+	transition: opacity 0s
+}
+
+.basenet-input {
+	padding: 8px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%
+}
+
+.basenet-select {
+	padding: 9px 0;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc
+}
+
+.basenet-dropdown-click, .basenet-dropdown-hover {
+	position: relative;
+	display: inline-block;
+	cursor: pointer
+}
+
+.basenet-dropdown-hover:hover .basenet-dropdown-content {
+	display: block
+}
+
+.basenet-dropdown-hover:first-child, .basenet-dropdown-click:hover {
+	background-color: #ccc;
+	color: #000
+}
+
+.basenet-dropdown-hover:hover>.basenet-button:first-child, .basenet-dropdown-click:hover>.basenet-button:first-child
+	{
+	background-color: #ccc;
+	color: #000
+}
+
+.basenet-dropdown-content {
+	cursor: auto;
+	color: #000;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	margin: 0;
+	padding: 0;
+	z-index: 1
+}
+
+.basenet-check, .basenet-radio {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 6px
+}
+
+.basenet-sidebar {
+	height: 100%;
+	width: 200px;
+	background-color: #fff;
+	position: fixed !important;
+	z-index: 1;
+	overflow: auto
+}
+
+.basenet-bar-block .basenet-dropdown-hover, .basenet-bar-block .basenet-dropdown-click {
+	width: 100%
+}
+
+.basenet-bar-block .basenet-dropdown-hover .basenet-dropdown-content, .basenet-bar-block .basenet-dropdown-click .basenet-dropdown-content
+	{
+	min-width: 100%
+}
+
+.basenet-bar-block .basenet-dropdown-hover .basenet-button, .basenet-bar-block .basenet-dropdown-click .basenet-button
+	{
+	width: 100%;
+	text-align: left;
+	padding: 8px 16px
+}
+
+.basenet-main, #main {
+	transition: margin-left .4s
+}
+
+.basenet-modal {
+	z-index: 3;
+	display: none;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4)
+}
+
+.basenet-modal-content {
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	width: 600px
+}
+
+.basenet-bar {
+	width: 100%;
+	overflow: hidden
+}
+
+.basenet-center .basenet-bar {
+	display: inline-block;
+	width: auto
+}
+
+.basenet-bar .basenet-bar-item {
+	padding: 8px 16px;
+	float: left;
+	width: auto;
+	border: none;
+	display: block;
+	outline: 0
+}
+
+.basenet-bar .basenet-dropdown-hover, .basenet-bar .basenet-dropdown-click {
+	position: static;
+	float: left
+}
+
+.basenet-bar .basenet-button {
+	white-space: normal
+}
+
+.basenet-bar-block .basenet-bar-item {
+	width: 100%;
+	display: block;
+	padding: 8px 16px;
+	text-align: left;
+	border: none;
+	outline: none;
+	white-space: normal;
+	float: none;
+	outline: 0
+}
+
+.basenet-bar-block.basenet-center .basenet-bar-item {
+	text-align: center
+}
+
+.basenet-block {
+	display: block;
+	width: 100%
+}
+
+.basenet-responsive {
+	display: block;
+	overflow-x: auto
+}
+
+.basenet-container:after, .basenet-container:before, .basenet-panel:after, .basenet-panel:before,
+	.basenet-row:after, .basenet-row:before, .basenet-row-padding:after, .basenet-row-padding:before,
+	.basenet-cell-row:before, .basenet-cell-row:after, .basenet-clear:after, .basenet-clear:before,
+	.basenet-bar:before, .basenet-bar:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.basenet-col, .basenet-half, .basenet-third, .basenet-twothird, .basenet-threequarter,
+	.basenet-quarter {
+	float: left;
+	width: 100%
+}
+
+.basenet-col.s1 {
+	width: 8.33333%
+}
+
+.basenet-col.s2 {
+	width: 16.66666%
+}
+
+.basenet-col.s3 {
+	width: 24.99999%
+}
+
+.basenet-col.s4 {
+	width: 33.33333%
+}
+
+.basenet-col.s5 {
+	width: 41.66666%
+}
+
+.basenet-col.s6 {
+	width: 49.99999%
+}
+
+.basenet-col.s7 {
+	width: 58.33333%
+}
+
+.basenet-col.s8 {
+	width: 66.66666%
+}
+
+.basenet-col.s9 {
+	width: 74.99999%
+}
+
+.basenet-col.s10 {
+	width: 83.33333%
+}
+
+.basenet-col.s11 {
+	width: 91.66666%
+}
+
+.basenet-col.s12 {
+	width: 99.99999%
+}
+
+@media ( min-width :601px) {
+	.basenet-col.m1 {
+		width: 8.33333%
+	}
+	.basenet-col.m2 {
+		width: 16.66666%
+	}
+	.basenet-col.m3, .basenet-quarter {
+		width: 24.99999%
+	}
+	.basenet-col.m4, .basenet-third {
+		width: 33.33333%
+	}
+	.basenet-col.m5 {
+		width: 41.66666%
+	}
+	.basenet-col.m6, .basenet-half {
+		width: 49.99999%
+	}
+	.basenet-col.m7 {
+		width: 58.33333%
+	}
+	.basenet-col.m8, .basenet-twothird {
+		width: 66.66666%
+	}
+	.basenet-col.m9, .basenet-threequarter {
+		width: 74.99999%
+	}
+	.basenet-col.m10 {
+		width: 83.33333%
+	}
+	.basenet-col.m11 {
+		width: 91.66666%
+	}
+	.basenet-col.m12 {
+		width: 99.99999%
+	}
+}
+
+@media ( min-width :993px) {
+	.basenet-col.l1 {
+		width: 8.33333%
+	}
+	.basenet-col.l2 {
+		width: 16.66666%
+	}
+	.basenet-col.l3 {
+		width: 24.99999%
+	}
+	.basenet-col.l4 {
+		width: 33.33333%
+	}
+	.basenet-col.l5 {
+		width: 41.66666%
+	}
+	.basenet-col.l6 {
+		width: 49.99999%
+	}
+	.basenet-col.l7 {
+		width: 58.33333%
+	}
+	.basenet-col.l8 {
+		width: 66.66666%
+	}
+	.basenet-col.l9 {
+		width: 74.99999%
+	}
+	.basenet-col.l10 {
+		width: 83.33333%
+	}
+	.basenet-col.l11 {
+		width: 91.66666%
+	}
+	.basenet-col.l12 {
+		width: 99.99999%
+	}
+}
+
+.basenet-content {
+	max-width: 980px;
+	margin: auto
+}
+
+.basenet-rest {
+	overflow: hidden
+}
+
+.basenet-cell-row {
+	display: table;
+	width: 100%
+}
+
+.basenet-cell {
+	display: table-cell
+}
+
+.basenet-cell-top {
+	vertical-align: top
+}
+
+.basenet-cell-middle {
+	vertical-align: middle
+}
+
+.basenet-cell-bottom {
+	vertical-align: bottom
+}
+
+.basenet-hide {
+	display: none !important
+}
+
+.basenet-show-block, .basenet-show {
+	display: block !important
+}
+
+.basenet-show-inline-block {
+	display: inline-block !important
+}
+
+@media ( max-width :600px) {
+	.basenet-modal-content {
+		margin: 0 10px;
+		width: auto !important
+	}
+	.basenet-modal {
+		padding-top: 30px
+	}
+	.basenet-dropdown-hover.basenet-mobile .basenet-dropdown-content, .basenet-dropdown-click.basenet-mobile .basenet-dropdown-content
+		{
+		position: relative
+	}
+	.basenet-hide-small {
+		display: none !important
+	}
+	.basenet-mobile {
+		display: block;
+		width: 100% !important
+	}
+	.basenet-bar-item.basenet-mobile, .basenet-dropdown-hover.basenet-mobile, .basenet-dropdown-click.basenet-mobile
+		{
+		text-align: center
+	}
+	.basenet-dropdown-hover.basenet-mobile, .basenet-dropdown-hover.basenet-mobile .basenet-btn,
+		.basenet-dropdown-hover.basenet-mobile .basenet-button, .basenet-dropdown-click.basenet-mobile,
+		.basenet-dropdown-click.basenet-mobile .basenet-btn, .basenet-dropdown-click.basenet-mobile .basenet-button
+		{
+		width: 100%
+	}
+}
+
+@media ( max-width :768px) {
+	.basenet-modal-content {
+		width: 500px
+	}
+	.basenet-modal {
+		padding-top: 50px
+	}
+}
+
+@media ( min-width :993px) {
+	.basenet-modal-content {
+		width: 900px
+	}
+	.basenet-hide-large {
+		display: none !important
+	}
+	.basenet-sidebar.basenet-collapse {
+		display: block !important
+	}
+}
+
+@media ( max-width :992px) and (min-width:601px) {
+	.basenet-hide-medium {
+		display: none !important
+	}
+}
+
+@media ( max-width :992px) {
+	.basenet-sidebar.basenet-collapse {
+		display: none
+	}
+	.basenet-main {
+		margin-left: 0 !important;
+		margin-right: 0 !important
+	}
+}
+
+.basenet-top, .basenet-bottom {
+	position: fixed;
+	width: 100%;
+	z-index: 1
+}
+
+.basenet-top {
+	top: 0
+}
+
+.basenet-bottom {
+	bottom: 0
+}
+
+.basenet-overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2
+}
+
+.basenet-display-topleft {
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.basenet-display-topright {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.basenet-display-bottomleft {
+	position: absolute;
+	left: 0;
+	bottom: 0
+}
+
+.basenet-display-bottomright {
+	position: absolute;
+	right: 0;
+	bottom: 0
+}
+
+.basenet-display-middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+.basenet-display-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(-0%, -50%)
+}
+
+.basenet-display-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%)
+}
+
+.basenet-display-topmiddle {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%)
+}
+
+.basenet-display-bottommiddle {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%)
+}
+
+.basenet-display-container:hover .basenet-display-hover {
+	display: block
+}
+
+.basenet-display-container:hover span.basenet-display-hover {
+	display: inline-block
+}
+
+.basenet-display-hover {
+	display: none
+}
+
+.basenet-display-position {
+	position: absolute
+}
+
+.basenet-circle {
+	border-radius: 50%
+}
+
+.basenet-round-small {
+	border-radius: 2px
+}
+
+.basenet-round, .basenet-round-medium {
+	border-radius: 4px
+}
+
+.basenet-round-large {
+	border-radius: 8px
+}
+
+.basenet-round-xlarge {
+	border-radius: 16px
+}
+
+.basenet-round-xxlarge {
+	border-radius: 32px
+}
+
+.basenet-row-padding, .basenet-row-padding>.basenet-half, .basenet-row-padding>.basenet-third,
+	.basenet-row-padding>.basenet-twothird, .basenet-row-padding>.basenet-threequarter,
+	.basenet-row-padding>.basenet-quarter, .basenet-row-padding>.basenet-col {
+	padding: 0 8px
+}
+
+.basenet-container, .basenet-panel {
+	padding: 0.01em 16px
+}
+
+.basenet-panel {
+	margin-top: 16px;
+	margin-bottom: 16px
+}
+
+.basenet-code, .basenet-codespan {
+	font-family: Consolas, "courier new";
+	font-size: 16px
+}
+
+.basenet-code {
+	width: auto;
+	background-color: #fff;
+	padding: 8px 12px;
+	border-left: 4px solid #4CAF50;
+	word-wrap: break-word
+}
+
+.basenet-codespan {
+	color: crimson;
+	background-color: #f1f1f1;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 110%
+}
+
+.basenet-card, .basenet-card-2 {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12)
+}
+
+.basenet-card-4, .basenet-hover-shadow:hover {
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0
+		rgba(0, 0, 0, 0.19)
+}
+
+.basenet-spin {
+	animation: basenet-spin 2s infinite linear
+}
+
+@
+keyframes basenet-spin { 0%{
+	transform: rotate(0deg)
+}
+
+100%{
+transform
+:rotate(359deg)
+}
+}
+.basenet-animate-fading {
+	animation: fading 10s infinite
+}
+
+@
+keyframes fading { 0%{
+	opacity: 0
+}
+
+50%{
+opacity
+:
+1
+}
+100%{
+opacity
+:
+0
+}
+}
+.basenet-animate-opacity {
+	animation: opac 0.8s
+}
+
+@
+keyframes opac {
+	from {opacity: 0
+}
+
+to {
+	opacity: 1
+}
+
+}
+.basenet-animate-top {
+	position: relative;
+	animation: animatetop 0.4s
+}
+
+@
+keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+.basenet-animate-left {
+	position: relative;
+	animation: animateleft 0.4s
+}
+
+@
+keyframes animateleft {
+	from {left: -300px;
+	opacity: 0
+}
+
+to {
+	left: 0;
+	opacity: 1
+}
+
+}
+.basenet-animate-right {
+	position: relative;
+	animation: animateright 0.4s
+}
+
+@
+keyframes animateright {
+	from {right: -300px;
+	opacity: 0
+}
+
+to {
+	right: 0;
+	opacity: 1
+}
+
+}
+.basenet-animate-bottom {
+	position: relative;
+	animation: animatebottom 0.4s
+}
+
+@
+keyframes animatebottom {
+	from {bottom: -300px;
+	opacity: 0
+}
+
+to {
+	bottom: 0;
+	opacity: 1
+}
+
+}
+.basenet-animate-zoom {
+	animation: animatezoom 0.6s
+}
+
+@
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+.basenet-animate-input {
+	transition: width 0.4s ease-in-out
+}
+
+.basenet-animate-input:focus {
+	width: 100% !important
+}
+
+.basenet-opacity, .basenet-hover-opacity:hover {
+	opacity: 0.60
+}
+
+.basenet-opacity-off, .basenet-hover-opacity-off:hover {
+	opacity: 1
+}
+
+.basenet-opacity-max {
+	opacity: 0.25
+}
+
+.basenet-opacity-min {
+	opacity: 0.75
+}
+
+.basenet-greyscale-max, .basenet-grayscale-max, .basenet-hover-greyscale:hover,
+	.basenet-hover-grayscale:hover {
+	filter: grayscale(100%)
+}
+
+.basenet-greyscale, .basenet-grayscale {
+	filter: grayscale(75%)
+}
+
+.basenet-greyscale-min, .basenet-grayscale-min {
+	filter: grayscale(50%)
+}
+
+.basenet-sepia {
+	filter: sepia(75%)
+}
+
+.basenet-sepia-max, .basenet-hover-sepia:hover {
+	filter: sepia(100%)
+}
+
+.basenet-sepia-min {
+	filter: sepia(50%)
+}
+
+.basenet-tiny {
+	font-size: 10px !important
+}
+
+.basenet-small {
+	font-size: 12px !important
+}
+
+.basenet-medium {
+	font-size: 15px !important
+}
+
+.basenet-large {
+	font-size: 18px !important
+}
+
+.basenet-xlarge {
+	font-size: 24px !important
+}
+
+.basenet-xxlarge {
+	font-size: 36px !important
+}
+
+.basenet-xxxlarge {
+	font-size: 48px !important
+}
+
+.basenet-jumbo {
+	font-size: 64px !important
+}
+
+.basenet-left-align {
+	text-align: left !important
+}
+
+.basenet-right-align {
+	text-align: right !important
+}
+
+.basenet-justify {
+	text-align: justify !important
+}
+
+.basenet-center {
+	text-align: center !important
+}
+
+.basenet-border-0 {
+	border: 0 !important
+}
+
+.basenet-border {
+	border: 1px solid #ccc !important
+}
+
+.basenet-border-top {
+	border-top: 1px solid #ccc !important
+}
+
+.basenet-border-bottom {
+	border-bottom: 1px solid #ccc !important
+}
+
+.basenet-border-left {
+	border-left: 1px solid #ccc !important
+}
+
+.basenet-border-right {
+	border-right: 1px solid #ccc !important
+}
+
+.basenet-topbar {
+	border-top: 6px solid #ccc !important
+}
+
+.basenet-bottombar {
+	border-bottom: 6px solid #ccc !important
+}
+
+.basenet-leftbar {
+	border-left: 6px solid #ccc !important
+}
+
+.basenet-rightbar {
+	border-right: 6px solid #ccc !important
+}
+
+.basenet-section, .basenet-code {
+	margin-top: 16px !important;
+	margin-bottom: 16px !important
+}
+
+.basenet-margin {
+	margin: 16px !important
+}
+
+.basenet-margin-top {
+	margin-top: 16px !important
+}
+
+.basenet-margin-bottom {
+	margin-bottom: 16px !important
+}
+
+.basenet-margin-left {
+	margin-left: 16px !important
+}
+
+.basenet-margin-right {
+	margin-right: 16px !important
+}
+
+.basenet-padding-small {
+	padding: 4px 8px !important
+}
+
+.basenet-padding {
+	padding: 8px 16px !important
+}
+
+.basenet-padding-large {
+	padding: 12px 24px !important
+}
+
+.basenet-padding-16 {
+	padding-top: 16px !important;
+	padding-bottom: 16px !important
+}
+
+.basenet-padding-24 {
+	padding-top: 24px !important;
+	padding-bottom: 24px !important
+}
+
+.basenet-padding-32 {
+	padding-top: 32px !important;
+	padding-bottom: 32px !important
+}
+
+.basenet-padding-48 {
+	padding-top: 48px !important;
+	padding-bottom: 48px !important
+}
+
+.basenet-padding-64 {
+	padding-top: 64px !important;
+	padding-bottom: 64px !important
+}
+
+.basenet-left {
+	float: left !important
+}
+
+.basenet-right {
+	float: right !important
+}
+
+.basenet-button:hover {
+	color: #000 !important;
+	background-color: #ccc !important
+}
+
+.basenet-transparent, .basenet-hover-none:hover {
+	background-color: transparent !important
+}
+
+.basenet-hover-none:hover {
+	box-shadow: none !important
+}

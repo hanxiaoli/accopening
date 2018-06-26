@@ -49,7 +49,7 @@ public class AccopeningController {
 		model.addAttribute("name", "abc");
 		request.setAttribute("name", "123");
 		logger.info("");
-		return "verification-upload.html";
+		return "regulations";
 	}
 
 	/**

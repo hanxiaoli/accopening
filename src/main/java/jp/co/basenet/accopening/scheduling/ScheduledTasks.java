@@ -36,8 +36,8 @@ public class ScheduledTasks {
 	 * second, minute, hour, day of month, month, day(s) of week
 	 * 
 	 */
-	//@Scheduled(cron = "0 0 18 * * MON-FRI")
-	@Scheduled(cron = "*/5 * * * * *")
+	@Scheduled(cron = "0 0 18 * * MON-FRI")
+	// @Scheduled(cron = "*/5 * * * * *")
 	public void reportCurrentTime() {
 		logger.info("The time is now {}", dateFormat.format(new Date()));
 		logger.error("The time is now {}", dateFormat.format(new Date()));
