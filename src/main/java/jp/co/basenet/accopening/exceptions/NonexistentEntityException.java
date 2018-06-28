@@ -1,10 +1,16 @@
 package jp.co.basenet.accopening.exceptions;
 
 public class NonexistentEntityException extends Exception {
-    public NonexistentEntityException(String message, Throwable cause) {
-        super(message, cause);
-    }
-    public NonexistentEntityException(String message) {
-        super(message);
-    }
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public NonexistentEntityException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public NonexistentEntityException(String message) {
+		super(message);
+	}
 }

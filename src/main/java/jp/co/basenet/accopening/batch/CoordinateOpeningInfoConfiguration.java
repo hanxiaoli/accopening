@@ -1,8 +1,7 @@
-package jp.co.basenet.accopening.batch.configuration;
+package jp.co.basenet.accopening.batch;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.batch.core.Job;
@@ -44,24 +43,17 @@ public class CoordinateOpeningInfoConfiguration {
 
 	@Value("${accopening.batch.outputfile}")
 	private Resource outputfile;
-	
-	@Autowired 
+
+	@Autowired
 	private MynumberRepository mynumberRepository;
 
 	// tag::readerwriterprocessor[]
-	// @Bean
-	// public CoordinateOpeningInfoReader reader() {
-	// return new CoordinateOpeningInfoReader();
-	// }
-
 	@Bean
 	public RepositoryItemReader<Mynumber> reader() {
-		List<String> list = new ArrayList<String>();
-
-		Map<String, Direction> map = new HashMap<String, Direction>();
-		map.put("number", Sort.DEFAULT_DIRECTION);
-		return new RepositoryItemReaderBuilder<Mynumber>().repository(mynumberRepository).arguments(list).sorts(map).methodName("findAll").name("findAll")
-				.build();
+		Map<String, Direction> sortMap = new HashMap<String, Direction>();
+		sortMap.put("number", Sort.DEFAULT_DIRECTION);
+		return new RepositoryItemReaderBuilder<Mynumber>().repository(mynumberRepository)
+				.arguments(new ArrayList<String>()).sorts(sortMap).methodName("findAll").name("findAll").build();
 	}
 
 	@Bean

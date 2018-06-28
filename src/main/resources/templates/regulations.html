@@ -85,13 +85,15 @@
 	<footer>
 		<form th:action="@{/agree-to-regulations}" method="post"
 			th:object="${regulationsViewModel}">
-			<div style="width: 180px; margin-left: auto; margin-right: auto">
-				<input name="checked" id="checked" type="checkbox"
-					th:checked="*{checked}" /> <label for="checked">上記規定に同意する
-				</label>
-			</div>
-			<div style="width: 60px; margin-left: auto; margin-right: auto">
-				<button class="basenet-button basenet-theme">次へ</button>
+			<div class="basenet-display-bottommiddle">
+				<div>
+					<input name="checked" id="checked" type="checkbox"
+						th:checked="*{checked}" /> <label for="checked">上記規定に同意する
+					</label>
+				</div>
+				<div>
+					<button class="basenet-button basenet-theme-action basenet-hover-theme">次へ</button>
+				</div>
 			</div>
 		</form>
 	</footer> </main>

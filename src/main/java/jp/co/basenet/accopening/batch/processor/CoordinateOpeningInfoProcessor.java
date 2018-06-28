@@ -9,13 +9,8 @@ public class CoordinateOpeningInfoProcessor implements ItemProcessor<Mynumber, C
 
 	@Override
 	public CoordinateOpeningInfoModel process(final Mynumber mynumber) throws Exception {
-
-		System.out.println(mynumber.getName());
-		// mynumber.setNumber(Long.parseLong("123456789012"));
-
 		CoordinateOpeningInfoModel coordinateOpeningInfoModel = new CoordinateOpeningInfoModel();
 		coordinateOpeningInfoModel.setNumber(Long.parseLong("123456789012"));
-		// log.info("Converting (" + person + ") into (" + transformedPerson + ")");
 
 		return coordinateOpeningInfoModel;
 	}

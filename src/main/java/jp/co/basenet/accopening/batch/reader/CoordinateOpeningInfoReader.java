@@ -17,17 +17,8 @@ public class CoordinateOpeningInfoReader extends AbstractItemStreamItemReader<My
 	@Autowired
 	private MynumberRepository mynumberRepository;
 
-//	@Qualifier
-//	private EntityManagerFactory entityManagerFactory;
-	//
-	// public CoordinateOpeningInfoReader(MynumberRepository mynumberRepository) {
-	//
-	// this.mynumberRepository = mynumberRepository;
-	// }
-
 	@Override
 	public void open(ExecutionContext executionContext) {
-//		entityManagerFactory.createEntityManager();
 		this.iterator = mynumberRepository.findAll().iterator();
 	}
 

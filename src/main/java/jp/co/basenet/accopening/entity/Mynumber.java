@@ -7,18 +7,15 @@ package jp.co.basenet.accopening.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Basic;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
@@ -26,47 +23,56 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @Entity
 @Table(name = "mynumber")
-@XmlRootElement
-@NamedQueries({
-    @NamedQuery(name = "Mynumber.findAll", query = "SELECT m FROM Mynumber m")
-    , @NamedQuery(name = "Mynumber.findByIdentityNumber", query = "SELECT m FROM Mynumber m WHERE m.identityNumber = :identityNumber")
-    , @NamedQuery(name = "Mynumber.findByName", query = "SELECT m FROM Mynumber m WHERE m.name = :name")
-    , @NamedQuery(name = "Mynumber.findByAddress", query = "SELECT m FROM Mynumber m WHERE m.address = :address")
-    , @NamedQuery(name = "Mynumber.findBySex", query = "SELECT m FROM Mynumber m WHERE m.sex = :sex")
-    , @NamedQuery(name = "Mynumber.findByBirthday", query = "SELECT m FROM Mynumber m WHERE m.birthday = :birthday")
-    , @NamedQuery(name = "Mynumber.findByExpiryDate", query = "SELECT m FROM Mynumber m WHERE m.expiryDate = :expiryDate")
-    , @NamedQuery(name = "Mynumber.findByIdentityType", query = "SELECT m FROM Mynumber m WHERE m.identityType = :identityType")
-    , @NamedQuery(name = "Mynumber.findBySerialNumber1", query = "SELECT m FROM Mynumber m WHERE m.serialNumber1 = :serialNumber1")
-    , @NamedQuery(name = "Mynumber.findBySerialNumber2", query = "SELECT m FROM Mynumber m WHERE m.serialNumber2 = :serialNumber2")})
+// @XmlRootElement
+// @NamedQueries({
+// @NamedQuery(name = "Mynumber.findAll", query = "SELECT m FROM Mynumber m")
+// , @NamedQuery(name = "Mynumber.findByIdentityNumber", query = "SELECT m FROM
+// Mynumber m WHERE m.identityNumber = :identityNumber")
+// , @NamedQuery(name = "Mynumber.findByName", query = "SELECT m FROM Mynumber m
+// WHERE m.name = :name")
+// , @NamedQuery(name = "Mynumber.findByAddress", query = "SELECT m FROM
+// Mynumber m WHERE m.address = :address")
+// , @NamedQuery(name = "Mynumber.findBySex", query = "SELECT m FROM Mynumber m
+// WHERE m.sex = :sex")
+// , @NamedQuery(name = "Mynumber.findByBirthday", query = "SELECT m FROM
+// Mynumber m WHERE m.birthday = :birthday")
+// , @NamedQuery(name = "Mynumber.findByExpiryDate", query = "SELECT m FROM
+// Mynumber m WHERE m.expiryDate = :expiryDate")
+// , @NamedQuery(name = "Mynumber.findByIdentityType", query = "SELECT m FROM
+// Mynumber m WHERE m.identityType = :identityType")
+// , @NamedQuery(name = "Mynumber.findBySerialNumber1", query = "SELECT m FROM
+// Mynumber m WHERE m.serialNumber1 = :serialNumber1")
+// , @NamedQuery(name = "Mynumber.findBySerialNumber2", query = "SELECT m FROM
+// Mynumber m WHERE m.serialNumber2 = :serialNumber2")})
 public class Mynumber implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
+    
     @NotNull
     @Size(min = 1, max = 12)
     @Column(name = "identity_number")
     private String identityNumber;
-    @Basic(optional = false)
+    
     @NotNull
     @Size(min = 1, max = 50)
     @Column(name = "name")
     private String name;
-    @Basic(optional = false)
+    
     @NotNull
     @Size(min = 1, max = 150)
     @Column(name = "address")
     private String address;
-    @Basic(optional = false)
+    
     @NotNull
     @Column(name = "sex")
     private Character sex;
-    @Basic(optional = false)
+    
     @NotNull
     @Column(name = "birthday")
     @Temporal(TemporalType.DATE)
     private Date birthday;
-    @Basic(optional = false)
+    
     @NotNull
     @Column(name = "expiry_date")
     @Temporal(TemporalType.DATE)

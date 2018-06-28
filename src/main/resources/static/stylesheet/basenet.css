@@ -1,5 +1,11 @@
-/* build with W3PRO.CSS 4.10 Jun 2018 by Han Xiaoli */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* built based on W3PRO.CSS 4.10 Jun 2018 by Han Xiaoli */
+html {
+	box-sizing: border-box
+}
+
+*, *:before, *:after {
+	box-sizing: inherit
+}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
 	-ms-text-size-adjust: 100%;
