@@ -1,12 +1,15 @@
 header {
-	height : 65px;
-	padding-top:10%
+	height: 65px;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 .basenet-title {
-	font-size:150%;
+	font-size: 150%;
 }
 
 aside {
-	color:grey;
+	color: grey;
+	font-size: 12px
 }

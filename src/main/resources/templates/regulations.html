@@ -21,16 +21,80 @@
 
 	<main class="basenet-container">
 
-	<article class="basenet-padding-32">
+	<article style="padding-top: 112px">
 		<div class="basenet-text-theme">
-			<h4>共同銀行口座取引規定</h4>
+			<h4>共同なんとか口座取引規定</h4>
+			<div class="basenet-padding-8">
+				<aside>最終更新日：2016年10月27日</aside>
+			</div>
+		</div>
+
+		<div class="basenet-padding-16">
+			<h5>第1 総則</h5>
+			<div class="basenet-padding-large">
+				<span style="font-weight: bold">1．（共同なんとか口座取引）</span>
+				<div class="basenet-padding-large">
+					（1） 共同なんとか口座は次の各号に掲げる取引から構成されます。
+					<div class="basenet-padding-large">
+						<div>1） なんとか</div>
+						<div>2） なんとか</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="basenet-padding-16">
-			<aside style="font-size: 12px">最終更新日：2016年10月27日</aside>
+			<h5>第2 総則</h5>
+			<div class="basenet-padding-large">
+				<span style="font-weight: bold">1．（共同なんとか口座取引）</span>
+				<div class="basenet-padding-large">
+					（1） 共同なんとか口座は次の各号に掲げる取引から構成されます。
+					<div class="basenet-padding-large">
+						<div>1） なんとか</div>
+						<div>2） なんとか</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="basenet-padding-16"><h5>第1　総則</h5></span></div>
+		<div class="basenet-padding-16">
+			<h5>第3 総則</h5>
+			<div class="basenet-padding-large">
+				<span style="font-weight: bold">1．（共同なんとか口座取引）</span>
+				<div class="basenet-padding-large">
+					（1） 共同なんとか口座は次の各号に掲げる取引から構成されます。
+					<div class="basenet-padding-large">
+						<div>1） なんとか</div>
+						<div>2） なんとか</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="basenet-padding-16">
+			<h5>第4 総則</h5>
+			<div class="basenet-padding-large">
+				<span style="font-weight: bold">1．（共同なんとか口座取引）</span>
+				<div class="basenet-padding-large">
+					（1） 共同なんとか口座は次の各号に掲げる取引から構成されます。
+					<div class="basenet-padding-large">
+						<div>1） なんとか</div>
+						<div>2） なんとか</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</article>
-	</main>
+	<footer>
+		<form th:action="@{/agree-to-regulations}" method="post"
+			th:object="${regulationsViewModel}">
+			<div style="width: 180px; margin-left: auto; margin-right: auto">
+				<input name="checked" id="checked" type="checkbox"
+					th:checked="*{checked}" /> <label for="checked">上記規定に同意する
+				</label>
+			</div>
+			<div style="width: 60px; margin-left: auto; margin-right: auto">
+				<button class="basenet-button basenet-theme">次へ</button>
+			</div>
+		</form>
+	</footer> </main>
 
 </body>
 </html>
